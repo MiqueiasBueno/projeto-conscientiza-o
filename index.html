@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR SECURITY - Conscientização Digital</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    
+    <div id="alert">
+        <img src="alerta.png" alt="Alerta">
+        <p> <strong>SEUS DADOS ACABARAM DE SER TOTALMENTE ROUBADOS!<br>
+           SUAS CONTAS DE REDES SOCIAS CLONADAS! <br>
+           CASO TENHA INTERESSE EM RECUPERAR ALGUM DADO ENTRE EM CONTATO 69XXXXX <strong>
+        </p>
+    </div>
+
+
+    <header>
+        <div class="navbar">
+            <div class="logo">QR SECURITY </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="saibamais.html">Saiba Mais</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>   
+        </div>
+    </header>
+
+    <div class="hero">
+        <h1>Proteja-se no Mundo Digital</h1>
+        <p>Saiba como evitar golpes, proteger seus dados e navegar com segurança na internet.</p>
+        <a href="saibamais.html" class="btn">Saiba Mais</a>
+    </div>
+
+    <section class="intro">
+        <h2>Por que se preocupar?</h2>
+        <p>
+            Vivemos em um mundo digital onde QR Codes, redes Wi-Fi públicas e aplicativos desconhecidos
+            podem ser armadilhas. Nesta página, você encontrará as melhores práticas para se proteger 
+            de golpes e garantir sua segurança online.
+        </p>
+    </section>
+
+   >
+    <section class="topics">
+        <h2>Melhores Práticas de Segurança</h2>
+        <div class="topic-list">
+            <div class="topic">
+                <h3>Verifique a Fonte</h3>
+                <p>Sempre confira a procedência do QR Code antes de escaneá-lo. Evite códigos desconhecidos.</p>
+            </div>
+            <div class="topic">
+                <h3>Evite Dados Pessoais</h3>
+                <p>Não insira informações sensíveis em sites desconhecidos ou suspeitos após escanear um QR Code.</p>
+            </div>
+            <div class="topic">
+                <h3>Cuidado com Wi-Fi Público</h3>
+                <p>Evite redes Wi-Fi públicas sem proteção. Elas podem ser exploradas por hackers para roubar informações.</p>
+            </div>
+            <div class="topic">
+                <h3>Use Antivírus</h3>
+                <p>Certifique-se de que seu dispositivo possui um antivírus atualizado para evitar ataques.</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer>
+        <p>&copy; 2024 QR SECURITY  - Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Exibe o alerta sempre que a página inicial é aberta
+        const alertBox = document.getElementById('alert');
+        
+        setTimeout(() => {
+            alertBox.classList.add('hidden');
+            
+            // Remove o alerta do DOM após a transição
+            setTimeout(() => alertBox.remove(), 1000);
+        }, 4000); // Tempo para ocultar o alerta: 5 segundos
+    </script>
+    
+</body>
+</html>
